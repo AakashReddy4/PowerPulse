@@ -27,7 +27,7 @@ router.post('/', createUser)
 //router.get('/', getAllUsers)
 
 // LOGIN
-router.post('/login',otpLimiter, loginUser)
+router.post('/login',loginUser)
 
 //VERIFY OTP
 router.post('/verify-otp',otpLimiter, verifyOTP)
