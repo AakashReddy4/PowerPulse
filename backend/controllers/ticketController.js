@@ -289,6 +289,7 @@ if (status) {
   const validTransitions = {
     ASSIGNED: ["IN_PROGRESS"],
     REOPENED: ["IN_PROGRESS"],
+    CLOSED: ["REOPENED"],
   }
 
   const allowedTransitions =
