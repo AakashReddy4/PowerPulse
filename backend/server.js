@@ -79,6 +79,9 @@ app.use("/api/digital-twin", digitalTwinRoutes)
 app.get('/', (req, res) => {
   res.send("API Running...")
 })
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: "ok" })
+})
 
 const startServer = async () => {
   try {

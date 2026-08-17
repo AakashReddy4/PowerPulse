@@ -4,6 +4,7 @@ import { useEffect } from "react"
 
 
 
+
 // Pages
 import LandingPage from "./pages/LandingPage"
 import Login from "./pages/Login"
@@ -31,6 +32,7 @@ import TechnicianMaintenance from "./pages/TechnicianMaintenance.jsx"
 // Route Guards
 import ProtectedRoute from "./components/ProtectedRoute"
 import PublicRoute from "./components/PublicRoute"
+import BackendStatus from "./components/BackendStatus"
 
 function App() {
 
@@ -40,6 +42,8 @@ function App() {
   }, [])
 
   return (
+    <>
+    <BackendStatus />
     <Routes>
 
       {/* PUBLIC ROUTES */}
@@ -198,6 +202,7 @@ function App() {
       
 
     </Routes>
+    </>
   )
 }
 
